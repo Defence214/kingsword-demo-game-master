@@ -1,0 +1,285 @@
+/*Custom font family definitions for the project*/
+
+@font-face
+{
+    font-family: poppins;
+    src: url("./../../assets/fonts/poppins.ttf");
+}
+
+
+@font-face 
+{
+    font-family:poppins ;
+    src: url("./../../assets/fonts/poppins_bold.ttf");
+    font-weight:900;
+}
+
+*
+{
+    font-family: poppins;
+}
+
+
+/*Project variables definitions */
+
+:root
+{
+    --brand-primary-color:lightskyblue;
+    --brand-secondary-color:rgb(103, 192, 248);
+    --brand-white-color:#fff;
+    --brand-category-love-color:#f84f4f;
+    --brand-category-love-color-2:rgb(211, 105, 105);
+    --brand-category-love-color-3:rgb(249, 105, 105);
+    --brand-small-text:   0.9rem;
+    --brand-small-text-2: 0.8rem;
+    --brand-small-text-3: 0.78rem;   
+    --brand-button-border-radius:30px;
+    --brand-footer-slider-border-radius:30px;
+}
+
+/*application font size styles*/
+
+.brand-small-text
+{
+    font-size:var(--brand-small-text);
+}
+
+
+.brand-small-text-2
+{
+    font-size:var(--brand-small-text-2);
+}
+
+
+.brand-small-text-3
+{
+    font-size:var(--brand-small-text-3);
+}
+
+/*application background colors*/
+
+.brand-primary-color
+{
+    background:var(--brand-primary-color);
+}
+
+.brand-white-color
+{
+    background:var(--brand-white-color);
+}
+
+.brand-category-love-color
+{
+    background:var(--brand-category-love-color);
+}
+
+.brand-category-love-color-2
+{
+    background:var(--brand-category-love-color-2);
+}
+
+
+/*application footer styling*/
+.app-footer
+{   
+    position: fixed;
+    bottom:0;
+    width:100%; 
+}
+
+
+.current-page-notch
+{
+    width:5px;
+    height:5px;
+    border-radius:50% !important;
+    margin-top: 5px;
+    background: var(--brand-white-color);
+}
+
+
+
+.footer-slider
+{
+    position: fixed;
+    bottom:0;
+    background:var(--brand-category-love-color);
+    height:60%;
+    width:100%;
+    z-index:1000000;
+    border-top-right-radius: var(--brand-footer-slider-border-radius);
+    border-top-left-radius: var(--brand-button-border-radius);
+}
+
+
+.footer-slider-notch
+{
+    width:40px;
+    background:var(--brand-white-color);
+    height:5px;
+    border-radius:50px;
+}
+
+
+/*spinner component*/
+
+#spinner {
+	background: var(--brand-primary-dark-color);
+	height: 80vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*home page main container styling*/
+
+.main-app-container
+{
+    height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	
+}
+
+.result-container, .not-found-container
+{
+    height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.game-area 
+{
+    height:100vh;
+    width:100%;
+}
+
+.z-index-class
+{
+    z-index:100000;
+}
+/*app button styling*/
+.brand-button{
+	border-radius: var(--brand-button-border-radius);
+	outline: none;
+	border: 3px solid var(--brand-category-love-color);
+	text-transform: capitalize;
+	background: var(--brand-white-color);
+	padding:10px;
+	width:60%;
+	cursor: pointer;
+    transition: .5s;
+    color:#000;
+}
+
+.brand-button:hover{
+    background:var(--brand-category-love-color);
+    border:none;
+    color:var(--brand-white-color);
+}
+
+.swal-confirm-button
+{
+    border-radius: var(--brand-button-border-radius);
+}
+
+
+/*category-selection stylying*/
+
+.category-selection
+{
+    width:82px;
+    height:82px;
+    border-radius: 50% !important;
+    background: var(--brand-category-love-color-3);
+    outline:4px solid var(--brand-white-color);
+    transition: .7s;
+    cursor: pointer;
+    user-select: none;
+   
+}
+
+.category-selection > img{
+    object-fit: cover;
+}
+
+.category-selection:hover
+{
+    transform: scale(1.1);
+}
+
+
+
+/*questions and answers styling*/
+
+
+.answer-container-inner-section
+{
+    background:var(--brand-white-color);
+    width:90px;
+    height:90px;
+    border-radius: 50% !important;
+    border:5px solid var(--brand-category-love-color);
+    transition: .7s;
+    cursor:pointer;
+    user-select: none;
+}
+
+.answer-container-inner-section:hover, .answer-container-inner-section-active
+{
+    width:90px;
+    height:90px;
+    border-radius: 50% !important;
+    background:var(--brand-category-love-color);
+    border:5px solid var(--brand-category-love-color-3);
+    color:var(--brand-white-color);
+    transform:scale(1.1);
+}
+
+
+/*custom responsiveness*/
+@media (min-width: 667.98px) {
+	.width-toggle {
+		width: 35%;
+	}
+	
+	
+	.width-toggle-2 {
+		width: 75%;
+		
+	}
+	.width-toggle-5{
+		width:90%;
+	}
+
+	.width-toggle-3 {
+		width: 50%;
+	}
+	.width-toggle-4{
+		width:30%;
+	}
+	.width-toggle-7{
+		width:40%;
+	}
+	.width-toggle-6{
+		width:25%;
+	}
+
+	.width-toggle-dash{
+		width:20%;
+	}
+
+}
